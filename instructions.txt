@@ -1,0 +1,66 @@
+//1. Initialize npm and install dependencies
+    //npm init
+// express, dotenv, cors, mongodb, ejs, nodemon (--save-dev)
+    // npm install express (npm i express) --> for simplified routing within webapp
+    // npm i dotenv --> to hide out variables and things we don't want to share when we push to github
+    // npm i cors --> overcome cross origin request blocks errors, cors erros access things locally
+    // npm i mongoose --> the mongoose database where our data is stored for universal access and scalability and when data gets bigger
+    // npm i ejs --> for simplified templating of html and rendering, dynamically vs static
+    // npm i nodemon --save-dev --> adding automatic restarting of node server when changes are saved, to the dev only not globally, add sctipt command on package.json file
+
+//2. Require dependencies in server.js-> setup dependencies in the file to use them
+    // require... and const ...
+
+//3. Declare variables
+    // the db, dbconnection string and collection name
+
+//7. Create gitignore file and push to github
+    // create .gitignore file and add node_modules and other files needed
+    //git init --> if it doens't have a git repo already
+    //create a new folder repo on github and follow instructions to push this to that foldee
+
+//4. Connect to Mongoose to connec to databsse - add connection string to .env file
+    // in the newly created .env file add DB_STRING = string that
+    // in server.js file establish connection to mongo
+
+//5. Add .env file to gitignore
+    // add .env 
+
+//5. Create Port
+    //inside the server.js app.listen... with a string for PORT
+    //.env add the PORT
+
+//----Test Mongo and Port Connection
+    //start server manually npm run start
+    //you can go to nodemon and add the script "dev": "nodemon server.js" then you can use npm run dev
+
+//6. Set middleware --> tools that help us read, transform or format info that makes since they run before routes
+    //app.set('view engine', to 'ejs) ==> allows us to run js to spit out html tool
+    //app.use(express.static('public')) ==> setting the route point to public folder which holds css and client side public files
+    //app.use(express.urlencoded({extended: true})) ==> to parse urls that 
+    //app.use(express.json()) ==> parsing data to read what it needs for the command
+    //app.use(cors()) ==> to preven cross origin request errors
+
+//8. Create Public and Views folders - add main.js and style.css to Public and index.ejs to Views
+    //main project folder or use mkdir public and Views
+    //in the public folder add main.js and style.css
+    //in the views folder add index.ejs
+//8b. Create a models folder- so you can create a database schema
+    //added new try catch for aysnc await function to get data/content from database and render to the ejs file or something.
+
+//9a. Add content to main.js, style.css and index.ejs
+    //inside index.ejs add content
+
+//9b. From root, init local git repo and commit --> to push to git hub
+
+//9c. sanitize for heroku so remove .env from gitignore 
+//10. Create heroku repo
+
+// heroku login
+// heroku create <leave empty or name of api>
+// echo "web: node server.js" > Procfile
+// git add . 
+// git commit -m "changes"
+// git push heroku main
+
+//----Test Heroku Link

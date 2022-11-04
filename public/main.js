@@ -1,0 +1,1 @@
+//Code that is client side and reaches out to the server back and forth using fetch 
